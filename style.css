@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background: url(./images/body-bg.jpg);
     position: relative;
@@ -440,12 +441,13 @@ button{
         }
         .matches .first-ma{
             display: flex;
+
             width: 450px;
             position: relative;
             align-items: center; 
             flex-direction: row-reverse;
             justify-content: space-between;
-           
+            
         }
         .matches .first-ma a{
             position: relative;
@@ -1041,7 +1043,8 @@ button{
         }
         .headlines .container{ 
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+
+            grid-template-columns: repeat(3,1fr);
             width: 100%;
             gap: 10px;
         }
@@ -1057,7 +1060,7 @@ button{
             transform: translateY(-15px);
         }
         .headlines .container .card{
-            width: 440px;
+            width: 100%;
             overflow: hidden;
             color: white;
             transition: .5s;
