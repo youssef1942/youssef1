@@ -1,0 +1,265 @@
+@media (max-width:1400px) {}
+
+@media (max-width:1200px) {
+
+    .nav ul,
+    .nav .btn,
+    .nav i {
+        display: none;
+    }
+
+    .menu-icon,
+    .mopile-links,
+    .mopile-links i {
+        display: flex;
+    }
+
+    .nav input:checked~.mopile-links {
+        display: block;
+        /* top: 100%; */
+        transform: translateX(-50%) scale(1);
+    }
+
+    .mopile-links {
+        background: #0c0c35;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        transition: .5s;
+        transform-origin: top;
+    }
+
+    .mopile-links .link-group {
+        padding: 10px 20px;
+    }
+
+    .mopile-links .link-group:not(:last-of-type) {
+        border-bottom: 1px solid white;
+    }
+
+    .mopile-links .link-group a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .mopile-links .link-group a div {
+        display: flex;
+    }
+
+    .mopile-links .link-group a i {
+        color: #5b6a83;
+        font-size: 13px;
+    }
+
+    .mopile-links .link-group a:hover div .fa-plus {
+        display: none;
+    }
+
+    .mopile-links .link-group a:hover div .fa-minus {
+        display: flex;
+    }
+
+    .mopile-links .link-group a div .fa-minus {
+        display: none;
+    }
+
+    .shapeall {
+        display: none;
+    }
+
+
+    .mopile-links .link-group:hover .mopile-drop {
+        display: block;
+    }
+
+    .mopile-links .link-group .mopile-drop {
+        padding: 10px 30px;
+        display: none;
+        transition: .5s;
+    }
+
+    .mopile-links .link-group .mopile-drop a:not(:last-of-type) {
+        border-bottom: 1px solid gray;
+    }
+
+    .mopile-links .link-group .mopile-drop a {
+        padding: 10px;
+        font-size: 16px;
+        font-family: var(--font2);
+    }
+
+    .img-div2 {
+        display: none;
+    }
+
+    img-div1 {
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .all-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+    }
+
+    .matches .first-ma {
+        /* background: wheat; */
+        width: 100%;
+    }
+
+    .second-ma {
+        width: 100%;
+    }
+
+   
+ .all-cards .card-pl:last-of-type{
+    display: none;
+ }
+.right{
+    justify-content: space-evenly;
+
+}
+.contact .right .inputs {
+    width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 5%;
+}
+.contact input {
+    width: 100%;
+    height: 50px;
+    justify-self: flex-start;
+}
+.contact .right .inputs {
+    display: flex;
+    gap: 10px;
+}
+
+ .gears .container {
+    grid-template-columns: repeat(3, 1fr);
+ }
+.headlines .container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+}
+
+@media (max-width:992px) {
+
+    .last{
+        width: 80%;
+    }
+
+    .main-photo img{
+        width: 100%;
+    }
+
+    .all-cards .card-pl:nth-child(3) {
+        display: none;
+    }
+
+    .all-cards {
+         width: 90%; 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact .right .inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logos{
+        display: none;
+    }
+    
+    .gears .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .headlines .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (max-width:768px) {
+       .footer input{
+        width: 80%;
+       }
+        
+        .all-cards .card-pl:nth-child(2) {
+            display: none;
+        }
+        
+        .all-cards {
+            width: 50%; 
+        }
+
+        .gears .container {
+            grid-template-columns: 1fr;
+        }
+
+        .footer {
+            grid-template-columns: repeat(2 , 1fr);
+        }
+            
+        }
+
+
+
+
+}
+
+@media (max-width:564px) {
+   
+    .footer input {
+            width: 80%;
+        }
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact .right{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+.contact input{
+    width: 100%;
+}
+
+.last{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.contact .text{
+    width: 90%;
+}
+.footer {
+        grid-template-columns: 1fr;
+    }
+
+}
